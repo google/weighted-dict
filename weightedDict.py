@@ -95,13 +95,13 @@ class WeightedDict:
 
     def keys(self):
         if not self.lt:
-            return [self.min_key] if self.min_key else []
+            return [self.min_key] if self.min_key is not None else []
         return self.lt.keys() + self.rt.keys()
 
     # Iterates over the keys in the keys' sorted order.
     def __iter__(self):
         if not self.lt:
-            if self.min_key:
+            if self.min_key is not None:
                 yield self.min_key
 
         else:
@@ -144,7 +144,7 @@ class WeightedDict:
 
         # Check to see if we're the top.
 
-        if not self.min_key:
+        if self.min_key is None:
             self.min_key, self.val = key, val
         # See if we're at the bottom.
         elif not self.lt:
