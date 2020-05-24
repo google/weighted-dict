@@ -1,4 +1,8 @@
 # WeightedDict
+[![GitHub issues](https://img.shields.io/github/issues/google/weighted-dict?logo=github&color=red)](https://github.com/google/weighted-dict/issues)
+[![GitHub forks](https://img.shields.io/github/forks/google/weighted-dict?logo=github&color=blue)](https://github.com/google/weighted-dict/network)
+[![GitHub stars](https://img.shields.io/github/stars/google/weighted-dict?logo=github&color=orange)](https://github.com/google/weighted-dict/stargazers)
+[![GitHub license](https://img.shields.io/github/license/google/weighted-dict?logo=github)](https://github.com/google/weighted-dict/blob/master/LICENSE)
 
 A "dictionary" for logarithmic time sampling of keys according to a probability
 distribution defined by the keys' (normalized) values.
